@@ -6,12 +6,12 @@ pool:
 
 stages:
 - stage: Build_Stage
-  displayName:
+  displayName: 
   jobs:
   - job: BuildNuget
     displayName: Build Nuget packages
     variables:
-      BuildConfigurations: release
+      BuildConfiguration: release
     steps:
 
     - task: DotNetCoreCLI@2
